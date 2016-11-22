@@ -16,7 +16,7 @@ class StringCalculator {
         
         if(!input.isEmpty) {
             
-            let numbersToProcess = input.components(separatedBy: ",")
+            let numbersToProcess = splitInputByDelimiters(inputToProcess: input)
             
             for numberToProcess in numbersToProcess {
                 result += Int(numberToProcess)!
@@ -24,6 +24,10 @@ class StringCalculator {
         }
         
         return result;
+    }
+    
+    func splitInputByDelimiters(inputToProcess: String) -> [String] {
+        return inputToProcess.components(separatedBy: CharacterSet.init(charactersIn: ",\n"))
     }
     
 }

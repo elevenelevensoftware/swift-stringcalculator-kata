@@ -37,4 +37,14 @@ class StringCalculatorKataTests: XCTestCase {
         let result = stringCalculator.calculate(input: "7,4")
         XCTAssertEqual(result, 11)
     }
+    
+    func testGivenTwoNumbersNewLineDelimitedShouldReturnSum() {
+        let result = stringCalculator.calculate(input: "5\n4")
+        XCTAssertEqual(result, 9)
+    }
+    
+    func testGivenThreeNumbersDelimitedEitherWayShouldReturnSum() {
+        let result = stringCalculator.calculate(input: "1,4\n6")
+        XCTAssertEqual(result, 11)
+    }
 }
