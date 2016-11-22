@@ -13,6 +13,7 @@
 		33D6A9E91DE4CF16006B73F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D6A9E81DE4CF16006B73F2 /* Assets.xcassets */; };
 		33D6A9EC1DE4CF16006B73F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D6A9EA1DE4CF16006B73F2 /* LaunchScreen.storyboard */; };
 		33D6A9F71DE4CF16006B73F2 /* StringCalculatorKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D6A9F61DE4CF16006B73F2 /* StringCalculatorKataTests.swift */; };
+		33D6AA021DE4CF62006B73F2 /* StringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D6AA011DE4CF62006B73F2 /* StringCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		33D6A9F21DE4CF16006B73F2 /* StringCalculatorKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringCalculatorKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D6A9F61DE4CF16006B73F2 /* StringCalculatorKataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCalculatorKataTests.swift; sourceTree = "<group>"; };
 		33D6A9F81DE4CF16006B73F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D6AA011DE4CF62006B73F2 /* StringCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				33D6A9E81DE4CF16006B73F2 /* Assets.xcassets */,
 				33D6A9EA1DE4CF16006B73F2 /* LaunchScreen.storyboard */,
 				33D6A9ED1DE4CF16006B73F2 /* Info.plist */,
+				33D6AA011DE4CF62006B73F2 /* StringCalculator.swift */,
 			);
 			path = StringCalculatorKata;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D6AA021DE4CF62006B73F2 /* StringCalculator.swift in Sources */,
 				33D6A9E41DE4CF16006B73F2 /* ViewController.swift in Sources */,
 				33D6A9E21DE4CF16006B73F2 /* AppDelegate.swift in Sources */,
 			);
