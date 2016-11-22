@@ -10,14 +10,17 @@ import Foundation
 
 class StringCalculator {
     
-    func calculate(input: String) -> String {
+    func calculate(input: String) -> Int {
         
-        var result : String;
+        var result : Int = 0
         
-        if(input.isEmpty) {
-            result = "0"
-        } else {
-            result = input
+        if(!input.isEmpty) {
+            
+            let numbersToProcess = input.components(separatedBy: ",")
+            
+            for numberToProcess in numbersToProcess {
+                result += Int(numberToProcess)!
+            }
         }
         
         return result;

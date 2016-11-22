@@ -24,7 +24,17 @@ class StringCalculatorKataTests: XCTestCase {
     }
     
     func testGivenEmptyStringAsInputShouldReturnZero() {
-        let result = stringCalculator.calculate(input: "");
-        XCTAssertEqual(result, "0");
+        let result = stringCalculator.calculate(input: "")
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testGivenSingleNumberAsInputShouldReturnStringValue() {
+        let result = stringCalculator.calculate(input: "7")
+        XCTAssertEqual(result, 7)
+    }
+    
+    func testGivenTwoNumbersCommaDelimitedShouldReturnSum() {
+        let result = stringCalculator.calculate(input: "7,4")
+        XCTAssertEqual(result, 11)
     }
 }
