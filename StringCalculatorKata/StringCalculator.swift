@@ -10,6 +10,9 @@ import Foundation
 
 class StringCalculator {
     
+    let minThreshold : Int = 0;
+    let maxThreshold : Int = 1000;
+    
     func calculate(input: String) throws -> Int {
         
         var result : Int = 0
@@ -22,11 +25,11 @@ class StringCalculator {
                 
                 var number = Int(numberToProcess)!
                 
-                if(number < 0) {
+                if(number < minThreshold) {
                     throw StringCalcError.InvalidInputError
                 }
                 
-                if(number > 1000) {
+                if(number > maxThreshold) {
                     number = 0;
                 }
                 
