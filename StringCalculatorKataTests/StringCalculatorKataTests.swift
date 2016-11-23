@@ -51,4 +51,9 @@ class StringCalculatorKataTests: XCTestCase {
     func testGivenNegativeNumbersAsInputShouldThrowError() {
         XCTAssertThrowsError( try stringCalculator.calculate(input: "-7"))
     }
+    
+    func testGivenNumberGreaterThanOneThousandThenShouldBeIgnore() {
+        let result = try! stringCalculator.calculate(input: "1007")
+        XCTAssertEqual(result, 0)
+    }
 }

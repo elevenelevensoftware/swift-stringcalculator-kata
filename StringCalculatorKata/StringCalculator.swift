@@ -20,10 +20,14 @@ class StringCalculator {
             
             for numberToProcess in numbersToProcess {
                 
-                let number = Int(numberToProcess)!
+                var number = Int(numberToProcess)!
                 
                 if(number < 0) {
                     throw StringCalcError.InvalidInputError
+                }
+                
+                if(number > 1000) {
+                    number = 0;
                 }
                 
                 result += number
