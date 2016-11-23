@@ -24,27 +24,31 @@ class StringCalculatorKataTests: XCTestCase {
     }
     
     func testGivenEmptyStringAsInputShouldReturnZero() {
-        let result = stringCalculator.calculate(input: "")
+        let result = try! stringCalculator.calculate(input: "")
         XCTAssertEqual(result, 0)
     }
     
     func testGivenSingleNumberAsInputShouldReturnStringValue() {
-        let result = stringCalculator.calculate(input: "7")
+        let result = try! stringCalculator.calculate(input: "7")
         XCTAssertEqual(result, 7)
     }
     
     func testGivenTwoNumbersCommaDelimitedShouldReturnSum() {
-        let result = stringCalculator.calculate(input: "7,4")
+        let result = try! stringCalculator.calculate(input: "7,4")
         XCTAssertEqual(result, 11)
     }
     
     func testGivenTwoNumbersNewLineDelimitedShouldReturnSum() {
-        let result = stringCalculator.calculate(input: "5\n4")
+        let result = try! stringCalculator.calculate(input: "5\n4")
         XCTAssertEqual(result, 9)
     }
     
     func testGivenThreeNumbersDelimitedEitherWayShouldReturnSum() {
-        let result = stringCalculator.calculate(input: "1,4\n6")
+        let result = try! stringCalculator.calculate(input: "1,4\n6")
         XCTAssertEqual(result, 11)
+    }
+    
+    func testGivenNegativeNumbersAsInputShouldThrowError() {
+        XCTAssertThrowsError( try stringCalculator.calculate(input: "-7"))
     }
 }

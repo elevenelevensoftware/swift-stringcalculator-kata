@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336A90EA1DE596A700BF2374 /* StringCalcErrorsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A90E91DE596A700BF2374 /* StringCalcErrorsEnum.swift */; };
 		33D6A9E21DE4CF16006B73F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D6A9E11DE4CF16006B73F2 /* AppDelegate.swift */; };
 		33D6A9E41DE4CF16006B73F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D6A9E31DE4CF16006B73F2 /* ViewController.swift */; };
 		33D6A9E71DE4CF16006B73F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D6A9E51DE4CF16006B73F2 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		336A90E91DE596A700BF2374 /* StringCalcErrorsEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCalcErrorsEnum.swift; sourceTree = "<group>"; };
 		33D6A9DE1DE4CF16006B73F2 /* StringCalculatorKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringCalculatorKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D6A9E11DE4CF16006B73F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33D6A9E31DE4CF16006B73F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				33D6A9EA1DE4CF16006B73F2 /* LaunchScreen.storyboard */,
 				33D6A9ED1DE4CF16006B73F2 /* Info.plist */,
 				33D6AA011DE4CF62006B73F2 /* StringCalculator.swift */,
+				336A90E91DE596A700BF2374 /* StringCalcErrorsEnum.swift */,
 			);
 			path = StringCalculatorKata;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D6AA021DE4CF62006B73F2 /* StringCalculator.swift in Sources */,
+				336A90EA1DE596A700BF2374 /* StringCalcErrorsEnum.swift in Sources */,
 				33D6A9E41DE4CF16006B73F2 /* ViewController.swift in Sources */,
 				33D6A9E21DE4CF16006B73F2 /* AppDelegate.swift in Sources */,
 			);
@@ -408,6 +412,7 @@
 				33D6A9FD1DE4CF16006B73F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33D6A9FE1DE4CF16006B73F2 /* Build configuration list for PBXNativeTarget "StringCalculatorKataTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +421,7 @@
 				33D6AA001DE4CF16006B73F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

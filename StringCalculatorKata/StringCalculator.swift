@@ -10,7 +10,7 @@ import Foundation
 
 class StringCalculator {
     
-    func calculate(input: String) -> Int {
+    func calculate(input: String) throws -> Int {
         
         var result : Int = 0
         
@@ -19,7 +19,14 @@ class StringCalculator {
             let numbersToProcess = splitInputByDelimiters(inputToProcess: input)
             
             for numberToProcess in numbersToProcess {
-                result += Int(numberToProcess)!
+                
+                let number = Int(numberToProcess)!
+                
+                if(number < 0) {
+                    throw StringCalcError.InvalidInputError
+                }
+                
+                result += number
             }
         }
         
